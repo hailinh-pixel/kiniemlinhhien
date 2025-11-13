@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎁 Kỷ Niệm 2 Năm - Linh & Hiển 💖</title>
+<style>
+body {margin:0;font-family:'Poppins',sans-serif;overflow-x:hidden;background: radial-gradient(circle at center,#ffebf3,#ffcce0);color:#d63384;}
+
+/* HỘP QUÀ */
+.gift-container{
+  width:100%;height:100vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
+  background: radial-gradient(circle,#ffd6e7,#ff9ecb);
+  z-index:10;transition:opacity 1.5s ease;
+}
+.gift-box{
+  width:220px;height:220px;position:relative;cursor:pointer;animation:bounce 2s infinite ease-in-out;
+}
+.gift-box .lid{position:absolute;width:100%;height:40%;background:#ff5c8d;top:0;border-radius:10px 10px 0 0;transition:transform 0.6s ease;transform-origin:bottom;}
+.gift-box .box{position:absolute;width:100%;height:70%;background:#ff99c8;bottom:0;border-radius:0 0 10px 10px;box-shadow:0 0 30px rgba(255,100,150,0.6);}
+.gift-box .ribbon{position:absolute;width:20%;height:100%;background:#fff0f6;left:40%;}
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.gift-text{font-size:1.5em;text-align:center;margin-top:40px;color:#d63384;text-shadow:0 0 15px white;}
+.date{margin-top:10px;font-size:1.1em;color:#a30059;}
+
+/* MAIN SCENE */
+.main-scene{
+  opacity:0;transition:opacity 1.5s ease;
+  width:100%;min-height:100vh; padding:50px 0;
+  background: linear-gradient(135deg,#ffe6f2,#fff0f6);
+  display:flex;flex-direction:column;align-items:center;
+}
+.title{
+  font-size:2.5em;color:#c2185b;text-shadow:0 0 15px #ffcce0;margin-bottom:50px;text-align:center;
+}
+.memory-container{
+  width:70%;max-width:600px;text-align:center;margin-bottom:40px;
+  animation:fadeZoom 0.8s ease;
+}
+@keyframes fadeZoom{0%{opacity:0;transform:scale(0.95);}100%{opacity:1;transform:scale(1);}}
+.memory-container img{
+  width:100%;height:auto;border-radius:20px;box-shadow:0 0 25px rgba(255,100,150,0.3);
+}
+.memory-container p{padding:10px 0;font-size:1.1em;color:#d63384;}
+
+/* HOOK */
+.hook-scene{
+  position:absolute;width:100%;height:100vh;background:radial-gradient(circle at center,#ffb6c1,#ff80b5);
+  display:flex;justify-content:center;align-items:center;flex-direction:column;
+  opacity:0;transition:opacity 1.5s ease;
+}
+.glow-heart{
+  font-size:120px;animation:beat 2s infinite;text-shadow:0 0 35px #ff80b5,0 0 70px #ff99cc;
+}
+@keyframes beat{0%,100%{transform:scale(1);}50%{transform:scale(1.1);}}
+.handwritten{
+  color:white;font-size:1.5em;margin-top:20px;text-align:center;font-family:'Dancing Script',cursive;
+  opacity:0;transition:opacity 1.5s ease;
+}
+
+/* LỜI CHÚC CUỐI */
+.final-message{
+  display:none;background:#ffcce0;width:100%;min-height:100vh;
+  text-align:center;padding:100px 20px;font-size:1.3em;line-height:1.7;color:#c2185b;
+}
+
+/* TIM BAY */
+.heart{
+  position:fixed;bottom:-10px;color:#ff80b5;font-size:20px;
+  animation:floatUp 5s linear infinite;opacity:0.8;
+}
+@keyframes floatUp{0%{transform:translateY(0) scale(1);opacity:1;}100%{transform:translateY(-800px) scale(0.5);opacity:0;}}
+</style>
+</head>
+<body>
+
+<!-- HỘP QUÀ -->
+<div class="gift-container" id="giftScene">
+  <div class="gift-box" id="giftBox">
+    <div class="lid"></div>
+    <div class="box"></div>
+    <div class="ribbon"></div>
+  </div>
+  <div class="gift-text">🎁 Ấn vào hộp quà để mở 🎁 Kỷ Niệm 2 Năm - Linh & Hiển 💖</div>
+  <div class="date">14.11.2023 💕</div>
+</div>
+
+<!-- ẢNH KỶ NIỆM -->
+<div class="main-scene" id="mainScene">
+  <h1 class="title">Hành Trình 2 Năm Của Chúng Ta 💖</h1>
+
+  <div class="memory-container"><img src="z6973866131732_9c5d573742f984601857589377d0d9b6.jpg"><p>✨ Khoảnh khắc đầu tiên ta bên nhau...</p></div>
+  <div class="memory-container"><img src="z6973866138150_65d1a20db2336358bfcd2c729cb78843.jpg"><p>💞 Những ngày hạnh phúc giản đơn mà ấm áp.</p></div>
+  <div class="memory-container"><img src="z7217722679875_fee24fcd689df808e8a95520944d872c.jpg"><p>🌸 Cùng nhau qua từng mùa thương nhớ.</p></div>
+  <div class="memory-container"><img src="z7217722707907_1b557e11ad1eb59d8cb2a92d42372f62.jpg"><p>💫 Mỗi nụ cười anh là niềm vui của em.</p></div>
+  <div class="memory-container"><img src="z7217722754327_04e155070c9b6b25f83ef99ea45112af.jpg"><p>💖 Hai năm, có những lúc vui,lúc buồn thật nhiều cảm xúc.</p></div>
+  <div class="memory-container"><img src="z7217722778537_ca9bd0854afc570cfccf2a74de442ebd.jpg"><p>🌷 Những ngày bên anh là khoảng trời bình yên nhất.</p></div>
+  <div class="memory-container"><img src="z7217722812611_c66e3abaabe52ec8ca7e0bd9500b5bce.jpg"><p>🌈 Cảm ơn anh vì luôn là điều ngọt ngào nhất trong đời em.</p></div>
+</div>
+
+<!-- HOOK TRÁI TIM CUỐI -->
+<div class="hook-scene" id="hookScene">
+  <div class="glow-heart">💖</div>
+  <div class="handwritten" id="line1">Anh còn nhớ ngày đầu tiên mình nắm tay nhau không?</div>
+  <div class="handwritten" id="line2">Hai năm rồi đó…</div>
+  <div class="handwritten" id="line3">Nếu hỏi em điều gì khiến em cười mỗi ngày…</div>
+  <div class="handwritten" id="line4">Thì có lẽ là… anh. 💞</div>
+</div>
+
+<!-- LỜI CHÚC CUỐI -->
+<div class="final-message" id="finalMessage">
+  <p>
+    Cảm ơn anh đã đến để yêu thương và đối xử với em bằng tất cả sự tử tế mà anh có 💗<br>
+    Mong rằng những điều đáng yêu em lén lút chuẩn bị cho anh sẽ làm anh cười nhiều hơn 🌸<br>
+    Nếu sau này có thêm nhiều năm nữa, em vẫn mong người đồng hành cùng em vẫn là anh.<br><br>
+    Em yêu anh, Chồng yêu cụa emm 💞<br><br>
+    — Linh 💌
+  </p>
+</div>
+
+<audio id="bgm" loop>
+  <source src="Young And Beautiful.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const giftBox=document.getElementById("giftBox");
+const giftScene=document.getElementById("giftScene");
+const mainScene=document.getElementById("mainScene");
+const hookScene=document.getElementById("hookScene");
+const finalMessage=document.getElementById("finalMessage");
+const bgm=document.getElementById("bgm");
+
+// mở hộp quà
+giftBox.addEventListener("click",()=>{
+  giftBox.querySelector(".lid").style.transform="rotateX(100deg)";
+  setTimeout(()=>{
+    bgm.play();
+    giftScene.style.opacity=0;
+    setTimeout(()=>{
+      giftScene.style.display="none";
+      mainScene.style.opacity=1;
+      startHearts();
+      // Sau 5s xuất hiện hook cuối
+      setTimeout(()=>showHook(),5000);
+    },1500);
+  },1000);
+});
+
+function showHook(){
+  hookScene.style.opacity=1;
+  setTimeout(()=>document.getElementById("line1").style.opacity=1,500);
+  setTimeout(()=>document.getElementById("line2").style.opacity=1,2500);
+  setTimeout(()=>document.getElementById("line3").style.opacity=1,4500);
+  setTimeout(()=>document.getElementById("line4").style.opacity=1,6500);
+  setTimeout(()=>{
+    hookScene.style.opacity=0;
+    setTimeout(()=>{
+      hookScene.style.display="none";
+      finalMessage.style.display="block";
+      startHearts();
+    },1500);
+  },9000);
+}
+
+// tim bay
+function startHearts(){
+  setInterval(()=>{
+    const heart=document.createElement("div");
+    heart.className="heart";
+    heart.innerHTML="💗";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(Math.random()*15+15)+"px";
+    document.body.appendChild(heart);
+    setTimeout(()=>heart.remove(),5000);
+  },500);
+}
+</script>
+</body>
+</html>
